@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Nota Final</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Simulador de Nota Final</h2>
+    <form id="formulario">
+        <label for="notasExamenes">Notas de exámenes:</label>
+        <input type="number" id="notasExamenes" min="0" max="20" step="0.1" required><br><br>
+        
+        <label for="notasPracticas">Notas de trabajos prácticos:</label>
+        <input type="number" id="notasPracticas" min="0" max="20" step="0.1" required><br><br>
+        
+        <button type="submit">Calcular Nota Final</button>
+    </form>
+
+    <div id="resultado" style="display: none;">
+        <h3>Nota Final:</h3>
+        <p id="notaFinal"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
